@@ -1,0 +1,28 @@
+
+<div class="container my=5">
+    <h1 class= "mb-3">Students</h1>
+    <table class=" table table-striped" *ngIf="students && students.length>0">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Full Name</th>
+                <th>Age</th>
+                <th>Date Of Birth (mm/dd/yyyy)</th>
+                <th>Address</th>
+                <th> </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let student of students">
+                <td>{{ student.id}}</td>
+                <td>{{ student.fullName}}</td>
+                <td>{{ student.age}}</td>
+                <td>{{ student.dob}}</td>
+                <td>{{ student.address}}</td>
+                <td><a [routerLink]="['/students', 'edit',student.id]">View</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <p *ngIf="!students || students.length <= 0">No students Found</p>
+</div>
+

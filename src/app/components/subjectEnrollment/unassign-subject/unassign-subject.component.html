@@ -1,0 +1,31 @@
+<div class="container my=5">
+    <h3 class= "mb-3">Unassign Subjects</h3>
+    <div class="row">
+        <div class="col-6">
+            <form #form="ngForm" (ngSubmit)="unassignSubject()">
+
+                <div class="mb-3">
+                    <label for="studentId" class="form-label">Student ID</label>
+                    <input type="text" class="form-control" id="studentId" readonly
+                    name="studentId" [(ngModel)]="unassignSubjectRequest.studentId">
+                  </div>
+                <div class="mb-3">
+                  <label for="subjectID" class="form-label">Subject ID</label>
+                  <input type="text" class="form-control" id="subjectID" readonly
+                  name="subjectID" [(ngModel)]="unassignSubjectRequest.subjectId" >
+                </div>
+        
+                <div class="row">
+                    <div class="col-6">
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </div>
+                    <div class="col-6">
+                        <button type="button" class="btn btn-secondary" (click)="goBack()">Go Back</button>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+
+</div>

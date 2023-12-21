@@ -1,0 +1,23 @@
+body {
+    background-color: #f8f9fa;
+    color: #495057;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .hero-section {
+    /*background: url('https://st5.depositphotos.com/27847728/65163/v/450/depositphotos_651635680-stock-illustration-word-cloud-background-concept-learning.jpg') center/cover no-repeat;*/
+    padding: 150px 0;
+    text-align: center;
+    color: #111111;
+  }
+
+  .hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+
+  .hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    font-style: italic;
+  }
